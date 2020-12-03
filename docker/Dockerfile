@@ -39,6 +39,14 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
         jq \
         iputils-ping \
         build-essential \
+        llvm \
+        libclang-dev \
+        cmake \
+        git \
+        clang \
+        cmake \
+        pkg-config \
+        libssl-dev \
         zlib1g-dev \
         gettext \
         liblttng-ust0 \
