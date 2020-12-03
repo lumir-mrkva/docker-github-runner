@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+    runner:
+      image: lumir/github-runner:latest
+      environment:
+        RUNNER_NAME: "cargo-runner"
+        RUNNER_REPOSITORY_URL: "https://github.com/..."
+        RUNNER_TOKEN: ""
+      volumes:
+        - runner:/home/runner
+volumes:
+  runner:
+    driver: local
